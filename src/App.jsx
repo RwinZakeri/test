@@ -2,7 +2,7 @@
 import './App.css'
 import {useState} from "react";
 function App() {
-    const [optionValue, setOptionValue] = useState('360')
+    const [optionValue, setOptionValue] = useState('0')
     const changeHandler = (e)=>{
         setOptionValue(e.target.value)
     }
@@ -26,6 +26,7 @@ function App() {
         </div>
         <div>
             <select onChange={changeHandler}>
+                <option value={"0"}></option>
                 <option value={"360"}>360</option>
                 <option value={"480"}>480</option>
                 <option value={"720"}>720</option>
